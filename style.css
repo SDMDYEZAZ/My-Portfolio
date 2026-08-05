@@ -1269,3 +1269,629 @@ box-shadow:
 
 
 }
+/* ===========================
+   Education Section
+=========================== */
+
+.education-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.education-card{
+    background:linear-gradient(135deg,
+    rgba(255,255,255,.10),
+    rgba(255,255,255,.03));
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(0,212,255,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.5s;
+    animation:projectFloat 5s ease-in-out infinite;
+}
+
+.education-card:nth-child(2){
+    animation-delay:1s;
+}
+
+.education-card:nth-child(3){
+    animation-delay:2s;
+}
+
+.education-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    border-color:#00d4ff;
+    box-shadow:0 0 35px rgba(0,212,255,.6);
+}
+
+.education-card h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.education-card h4{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.education-card p{
+    color:#cccccc;
+}
+
+
+/* ===========================
+   Internship Section
+=========================== */
+
+.internship-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.internship-card{
+    background:linear-gradient(135deg,
+    rgba(255,255,255,.10),
+    rgba(255,255,255,.03));
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(0,212,255,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.5s;
+    animation:projectFloat 5s ease-in-out infinite;
+}
+
+.internship-card:nth-child(2){
+    animation-delay:1s;
+}
+
+.internship-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    border-color:#00d4ff;
+    box-shadow:0 0 35px rgba(0,212,255,.6);
+}
+
+.internship-card h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.internship-card h4{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.internship-card p{
+    color:#cccccc;
+}
+
+
+/* ===========================
+   Languages Floating Glass Cards
+=========================== */
+
+#languages{
+    text-align:center;
+}
+
+
+.language-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+
+
+.language-box span{
+
+    min-width:120px;
+
+    padding:14px 25px;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.03)
+    );
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(0,212,255,.5);
+
+
+    color:white;
+
+
+    font-size:17px;
+
+
+    font-weight:500;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,212,255,.2);
+
+
+
+    animation:
+
+    languageFloat 4s ease-in-out infinite;
+
+
+    transition:.5s;
+
+}
+
+
+
+.language-box span:nth-child(2){
+
+    animation-delay:.5s;
+
+}
+
+
+.language-box span:nth-child(3){
+
+    animation-delay:1s;
+
+}
+
+
+.language-box span:nth-child(4){
+
+    animation-delay:1.5s;
+
+}
+
+
+
+
+.language-box span:hover{
+
+
+    background:#00d4ff;
+
+
+    color:#111;
+
+
+    transform:
+
+    translateY(-12px)
+    scale(1.1);
+
+
+
+    box-shadow:
+
+    0 0 30px #00d4ff;
+
+
+}
+
+
+
+@keyframes languageFloat{
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+/* ==================================
+   NEW SECTIONS COMMON STYLE
+   Education
+   Internships
+   Languages
+   Hobbies
+   Programming
+   Soft Skills
+   Operating Systems
+   Tools
+================================== */
+
+
+/* Common Container */
+
+.education-container,
+.internship-container,
+.language-box,
+.hobby-box,
+.program-box,
+.soft-box,
+.os-box,
+.tool-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+
+
+/* Common Floating Glass Cards */
+
+.education-card,
+.internship-card,
+.language-box span,
+.hobby-box span,
+.program-box span,
+.soft-box span,
+.os-box span,
+.tool-box span{
+
+
+    min-width:130px;
+
+
+    padding:14px 25px;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.03)
+    );
+
+
+    backdrop-filter:blur(15px);
+
+
+
+    border-radius:18px;
+
+
+
+    border:
+
+    1px solid rgba(0,212,255,.4);
+
+
+
+    color:white;
+
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,212,255,.15);
+
+
+
+    transition:.5s;
+
+
+
+    animation:
+
+    newFloat 4s ease-in-out infinite;
+
+
+}
+
+
+
+/* Different Floating Delay */
+
+.education-card:nth-child(even),
+.internship-card:nth-child(even),
+.language-box span:nth-child(even),
+.hobby-box span:nth-child(even),
+.program-box span:nth-child(even),
+.soft-box span:nth-child(even),
+.os-box span:nth-child(even),
+.tool-box span:nth-child(even){
+
+    animation-delay:1s;
+
+}
+
+
+
+/* Hover Effect */
+
+.education-card:hover,
+.internship-card:hover,
+.language-box span:hover,
+.hobby-box span:hover,
+.program-box span:hover,
+.soft-box span:hover,
+.os-box span:hover,
+.tool-box span:hover{
+
+
+    background:#00d4ff;
+
+
+    color:#111;
+
+
+
+    transform:
+
+    translateY(-12px)
+    scale(1.08);
+
+
+
+    box-shadow:
+
+    0 0 35px #00d4ff;
+
+
+}
+
+
+
+/* Heading Color */
+
+.education-card h3,
+.internship-card h3{
+
+    color:#00d4ff;
+
+}
+
+
+
+.education-card h4,
+.internship-card h4{
+
+    color:white;
+
+}
+
+
+
+.education-card p,
+.internship-card p{
+
+    color:#cccccc;
+
+}
+
+
+
+/* Floating Animation */
+
+@keyframes newFloat{
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+/* ==================================
+   FINAL EDUCATION & INTERNSHIP STYLE
+   (Same as Project Cards)
+================================== */
+
+
+/* Card Design */
+
+.education-card,
+.internship-card{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.03)
+    );
+
+
+    backdrop-filter:blur(15px);
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    border:
+
+    1px solid rgba(0,212,255,.25);
+
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.35);
+
+
+
+    transition:.5s;
+
+
+    animation:
+
+    projectFloat 5s ease-in-out infinite;
+
+}
+
+
+
+/* Floating Delay */
+
+.education-card:nth-child(2),
+.internship-card:nth-child(2){
+
+    animation-delay:1s;
+
+}
+
+
+
+/* Hover Effect */
+
+.education-card:hover,
+.internship-card:hover{
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.15),
+    rgba(255,255,255,.05)
+    );
+
+
+    border-color:#00d4ff;
+
+
+    transform:
+
+    translateY(-15px)
+    scale(1.04);
+
+
+
+    box-shadow:
+
+    0 0 35px rgba(0,212,255,.6);
+
+}
+
+
+
+/* Heading */
+
+.education-card h3,
+.internship-card h3{
+
+
+    color:#00d4ff;
+
+
+    margin-bottom:12px;
+
+
+    text-shadow:
+
+    0 0 10px rgba(0,212,255,.5);
+
+}
+
+
+
+/* Sub Heading */
+
+.education-card h4,
+.internship-card h4{
+
+
+    color:white;
+
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* Paragraph */
+
+.education-card p,
+.internship-card p{
+
+
+    color:#cccccc;
+
+
+}
+/* ==================================
+   Internship Card Alignment Fix
+================================== */
+
+.internship-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    align-items:stretch;
+
+}
+
+
+.internship-card{
+
+    height:100%;
+
+    min-height:230px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* Make all cards equal height */
+
+.internship-card p{
+
+    flex-grow:1;
+
+}
