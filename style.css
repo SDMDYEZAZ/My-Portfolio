@@ -12,7 +12,7 @@
     padding:0;
     box-sizing:border-box;
     scroll-behavior:smooth;
-    font-family:'Poppins',sans-serif;
+    font-family:"Times New Roman", Times, serif;
 }
 
 
@@ -1894,4 +1894,116 @@ box-shadow:
 
     flex-grow:1;
 
+}
+
+/* ===========================
+   Mouse Pointer Glow
+=========================== */
+
+.mouse-glow{
+    position:fixed;
+    width:250px;
+    height:250px;
+
+    pointer-events:none;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,212,255,0.18) 0%,
+            rgba(0,212,255,0.08) 35%,
+            transparent 70%
+        );
+
+    transform:translate(-50%,-50%);
+
+    z-index:-1;
+
+    filter:blur(10px);
+
+    transition:
+        left .08s ease-out,
+        top .08s ease-out;
+}
+html,
+body,
+button,
+input,
+textarea,
+select,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li{
+    font-family:"Times New Roman", Times, serif;
+}
+/* =================================
+   Smoke Cloud Circuit Reveal
+================================= */
+
+.circuit-reveal{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    pointer-events:none;
+
+    z-index:1;
+
+    background-image:url("circuit-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    opacity:0;
+
+    filter:
+        brightness(.9)
+
+    transition:opacity .4s ease;
+
+    --mouse-x:50%;
+    --mouse-y:50%;
+
+    mask-image:
+        radial-gradient(
+            ellipse 220px 160px at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            rgba(0,0,0,.9) 25%,
+            rgba(0,0,0,.5) 55%,
+            transparent 100%
+        );
+
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 220px 160px at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            rgba(0,0,0,.9) 25%,
+            rgba(0,0,0,.5) 55%,
+            transparent 100%
+        );
+
+}
+
+header,
+section,
+footer{
+    position:relative;
+    z-index:2;
 }
